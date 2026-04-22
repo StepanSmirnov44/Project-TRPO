@@ -1,0 +1,23 @@
+<!-- АДМИН-ПАНЕЛЬ (СКРЫТА ПО УМОЛЧАНИЮ) -->
+<section class="admin-panel" id="adminPanel">
+    <div class="container">
+        <div class="admin-header">
+            <h2>🛠️ BRO STORE — управление</h2>
+            <p>Добавляй, удаляй и меняй товары</p>
+        </div>
+        <div class="admin-form">
+            <input type="text" id="productName" placeholder="Название товара (iPhone 15 Pro)" class="admin-input">
+            <input type="text" id="productDesc" placeholder="Краткое описание (Титан, A17 Pro)" class="admin-input">
+            <input type="text" id="productPrice" placeholder="Цена (103 990 ₽)" class="admin-input">
+            <select id="productCategory" class="admin-input">
+                <option value="iPhone">iPhone</option>
+                <option value="Mac">Mac</option>
+                <option value="iPad">iPad</option>
+                <option value="Watch">Watch</option>
+                <option value="Audio">Audio</option>
+            </select>
+            <button onclick="addProduct()" class="btn-primary">➕ Добавить товар</button>
+            <button onclick="logoutAdmin()" class="btn-logout">🚪 Выйти из панели</button>
+        </div>
+    </div>
+</section>
