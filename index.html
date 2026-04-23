@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRO STORE | Оранжевая техника Apple в Костроме</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- КНОПКИ МЕССЕНДЖЕРОВ (Telegram + VK) -->
+    <div class="floating-messengers">
+        <a href="https://t.me/bro_store_apple" target="_blank" class="messenger-btn tg" title="Telegram">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="white" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.6-1.38-.97-2.23-1.56-.99-.69-.35-1.07.22-1.69.15-.15 2.76-2.53 2.81-2.74.01-.03.02-.14-.06-.2-.08-.06-.2-.04-.28-.02-.12.02-2.02 1.28-2.85 1.81-.27.18-.52.27-.74.27-.24 0-.63-.12-.93-.22-.37-.12-.83-.26-1.2-.41-.47-.19-.85-.46-.75-.94.05-.26.39-.53.98-.81 1.97-.86 4.42-1.7 6.44-2.22 1.52-.39 1.83-.32 2.18-.32.2 0 .51.05.74.27.16.15.21.36.18.57z"/></svg>
+        </a>
+        <a href="https://vk.me/bro_store_apple" target="_blank" class="messenger-btn vk" title="VK">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.48 15.2c-.2.2-.5.2-.9.1-1.2-.3-2.4-1-3.5-1.8-.3-.2-.6-.4-.9-.5-.3-.1-.5 0-.7.2l-1.5 1.4c-.2.2-.4.3-.7.1-1.2-.6-2.2-1.5-3.1-2.5-1.5-1.5-2.5-3.2-3.2-5.1-.1-.3 0-.5.2-.7l1.3-1.3c.2-.2.3-.5.2-.8l-.8-2.3c-.1-.3 0-.6.2-.8.2-.2.5-.3.8-.1l2.3.9c.3.1.6.1.9-.1l4.5-3.2c.3-.2.7-.2 1-.1.3.1.5.4.6.7l.9 2.8c.1.3.3.5.6.6l2.5.7c.3.1.5.3.6.6.1.3 0 .6-.2.8l-3.2 3.8c-.2.2-.3.5-.2.8.3 1.1.4 2.2.3 3.3 0 .4-.1.7-.3.9z"/></svg>
+        </a>
+        <a href="tel:+79995119999" class="messenger-btn call" title="Позвонить">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="white" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">🔥 BRO STORE — неофициальный реселлер Apple в Костроме</div>
+            <h1 class="hero-title">Техника Apple<br><span class="gradient-text">только в BRO STORE</span></h1>
+            <p class="hero-description">Оригинал, гарантия, сервис, бесплатная доставка по Костроме</p>
+            <div class="hero-buttons">
+                <a href="#catalog" class="btn-primary">Смотреть каталог →</a>
+                <a href="#contact" class="btn-secondary">Связаться с BRO STORE</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span>1000+</span><p>довольных клиентов</p></div>
+                <div class="stat"><span>24/7</span><p>поддержка</p></div>
+                <div class="stat"><span>2 года</span><p>гарантии</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- АДМИН-ПАНЕЛЬ (СКРЫТА) -->
+    <section class="admin-panel" id="adminPanel">
+        <div class="container">
+            <div class="admin-header">
+                <h2>🛠️ BRO STORE — управление</h2>
+                <p>Добавляй, удаляй и меняй товары</p>
+            </div>
+            <div class="admin-form">
+                <input type="text" id="productName" placeholder="Название (iPhone 15 Pro)" class="admin-input">
+                <input type="text" id="productDesc" placeholder="Описание (Титан, A17 Pro)" class="admin-input">
+                <input type="text" id="productPrice" placeholder="Цена (103 990 ₽)" class="admin-input">
+                <select id="productCategory" class="admin-input">
+                    <option value="iPhone">iPhone</option>
+                    <option value="Mac">Mac</option>
+                    <option value="iPad">iPad</option>
+                    <option value="Watch">Watch</option>
+                    <option value="Audio">Audio</option>
+                </select>
+                <button onclick="addProduct()" class="btn-primary">➕ Добавить товар</button>
+                <button onclick="logoutAdmin()" class="btn-logout">🚪 Выйти из панели</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Каталог BRO STORE</h2>
+                <p class="section-subtitle">Актуальные модели с официальной гарантией</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- товары из JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Только оригинал</h3>
+                    <p>Сертификаты, проверка по IMEI</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Доставка по Костроме</h3>
+                    <p>Бесплатно за 2 часа</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Trade-in</h3>
+                    <p>Скидка до 30%</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Рассрочка 0-0-12</h3>
+                    <p>Без первого взноса</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КАК МЫ РАБОТАЕМ -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как работает BRO STORE</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Выбери товар</h3>
+                    <p>В каталоге или напиши нам</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>Свяжись с нами</h3>
+                    <p>Telegram / VK / звонок</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>Оплата и доставка</h3>
+                    <p>Любым удобным способом</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>Получи и пользуйся</h3>
+                    <p>Активация и подарок</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">Нас рекомендуют</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Заказывал iPhone 15 Pro в BRO STORE. Привезли через час, оригинал, чек. Отличный магазин!"</p>
+                    <h4>Алексей, Кострома</h4>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"MacBook Air M3 — цена топ, дали рассрочку на 6 месяцев. BRO STORE — лучшие!"</p>
+                    <h4>Екатерина, Кострома</h4>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Помогли с выбором часов, всегда на связи. Спасибо BRO STORE!"</p>
+                    <h4>Дмитрий, Кострома</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА СВЯЗИ (ТОЛЬКО ТЕЛЕФОН) -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Остались вопросы? 🤝</h2>
+                <p class="contact-text">Оставь номер — мы перезвоним за 2 минуты</p>
+                <div class="contact-messengers">
+                    <p>Или напиши нам:</p>
+                    <div class="messenger-links">
+                        <a href="https://t.me/bro_store_apple" target="_blank">📱 Telegram</a>
+                        <a href="https://vk.me/bro_store_apple" target="_blank">📘 VK</a>
+                        <a href="tel:+79995119999" class="call-link">📞 Позвонить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="callbackForm" onsubmit="event.preventDefault(); alert('Спасибо! Мы свяжемся с вами в ближайшее время.'); this.reset();">
+                    <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                    <button type="submit" class="btn-primary full-width">Перезвоните мне</button>
+                    <p class="form-note">Никакого спама, только консультация</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>🍊 BRO STORE</h3>
+                    <p>Техника Apple в Костроме</p>
+                </div>
+                <div>
+                    <h4>Контакты</h4>
+                    <a href="tel:+79995119999">+7 (999) 511-99-99</a>
+                    <a href="mailto:BroStore@yandex.ru">BroStore@yandex.ru</a>
+                </div>
+                <div>
+                    <h4>Режим работы</h4>
+                    <p>Ежедневно: 10:00 – 21:00</p>
+                    <p>Telegram / VK: 24/7</p>
+                </div>
+                <div>
+                    <h4>Локация</h4>
+                    <p>📍 Кострома</p>
+                    <p>Точный адрес при заказе</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div id="adminSecretZone" style="cursor: pointer; display: inline-block;" title="зона для админа">
+                    <span style="opacity: 0.2; font-size: 10px;">🍊 BRO STORE v2.0</span>
+                </div>
+                <p>© 2025 BRO STORE — официальный реселлер Apple в Костроме ❤️‍🔥</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========== ЗАЩИТА АДМИН-ПАНЕЛИ ==========
+        const adminPanel = document.getElementById('adminPanel');
+        const secretZone = document.getElementById('adminSecretZone');
+        
+        adminPanel.style.display = 'none';
+        
+        function showAdminPanelWithPassword() {
+            const password = prompt('🔐 Введите пароль администратора:');
+            if (password === 'BRO2025') {
+                adminPanel.style.display = 'block';
+                adminPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                alert('✅ Добро пожаловать в панель управления BRO STORE');
+            } else if (password !== null) {
+                alert('❌ Неверный пароль');
+            }
+        }
+        
+        window.logoutAdmin = function() {
+            adminPanel.style.display = 'none';
+            alert('🔒 Выход из панели управления');
+        }
+        
+        if (secretZone) {
+            secretZone.addEventListener('dblclick', showAdminPanelWithPassword);
+        }
+        
+        // ========== ТОВАРЫ ==========
+        let products = JSON.parse(localStorage.getItem('broStoreProducts')) || [
+            { id: 1, name: "iPhone 15 Pro", desc: "Титан, A17 Pro, 48 МП", price: "103 990 ₽", category: "iPhone", img: "📱" },
+            { id: 2, name: "MacBook Air M3", desc: "13.6\", 8‑ядерный CPU, 10‑ядерный GPU", price: "119 990 ₽", category: "Mac", img: "💻" },
+            { id: 3, name: "iPad Pro M2", desc: "11\", Liquid Retina, 128GB", price: "89 990 ₽", category: "iPad", img: "📟" },
+            { id: 4, name: "Apple Watch Ultra 2", desc: "49 мм, всегда на дисплее", price: "73 990 ₽", category: "Watch", img: "⌚️" },
+            { id: 5, name: "AirPods Pro 2", desc: "Активное шумоподавление", price: "29 990 ₽", category: "Audio", img: "🎧" },
+            { id: 6, name: "iPhone 14", desc: "A15 Bionic, 6.1 дюйма", price: "72 990 ₽", category: "iPhone", img: "📲" }
+        ];
+
+        function saveProducts() {
+            localStorage.setItem('broStoreProducts', JSON.stringify(products));
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            if (!grid) return;
+            grid.innerHTML = products.map(product => `
+                <div class="product-card" data-id="${product.id}">
+                    <div class="product-image">
+                        <div class="image-placeholder" style="font-size: 3.5rem;">${product.img}</div>
+                    </div>
+                    <h3 class="product-title">${product.name}</h3>
+                    <p class="product-desc">${product.desc}</p>
+                    <div class="product-price">${product.price}</div>
+                    <div class="product-actions">
+                        <button class="btn-outline order-btn" onclick="orderViaManager('${product.name.replace(/'/g, "\\'")}')">📱 Заказать</button>
+                        <button class="btn-delete" onclick="deleteProduct(${product.id})" title="Удалить товар">🗑️</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        window.addProduct = function() {
+            const name = document.getElementById('productName').value.trim();
+            const desc = document.getElementById('productDesc').value.trim();
+            const price = document.getElementById('productPrice').value.trim();
+            const category = document.getElementById('productCategory').value;
+            
+            if (!name || !desc || !price) {
+                alert('⚠️ Заполните все поля!');
+                return;
+            }
+            
+            const newId = products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 7;
+            const emojiMap = { iPhone: "📱", Mac: "💻", iPad: "📟", Watch: "⌚️", Audio: "🎧" };
+            
+            products.push({
+                id: newId,
+                name: name,
+                desc: desc,
+                price: price,
+                category: category,
+                img: emojiMap[category] || "📱"
+            });
+            
+            saveProducts();
+            renderProducts();
+            
+            document.getElementById('productName').value = '';
+            document.getElementById('productDesc').value = '';
+            document.getElementById('productPrice').value = '';
+            alert('✅ Товар добавлен в каталог BRO STORE');
+        }
+        
+        window.deleteProduct = function(id) {
+            if (confirm('🗑️ Удалить товар?')) {
+                products = products.filter(p => p.id !== id);
+                saveProducts();
+                renderProducts();
+                alert('Товар удалён');
+            }
+        }
+        
+        window.orderViaManager = function(productName) {
+            const message = `Здравствуйте! Хочу заказать ${productName} в BRO STORE. Доставка в Кострому.`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://t.me/bro_store_apple?text=${encodedMessage}`, '_blank');
+        }
+        
+        // ========== АНИМАЦИЯ ==========
+        const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.product-card, .feature-card, .step, .review-card, .contact-container').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        renderProducts();
+    </script>
+</body>
+</html>
